@@ -1,0 +1,3035 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\conf\global_settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\apps\__init__.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+Not Found: /favicon.ico
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/img/donation-1.jpg
+Not Found: /static/img/donation-2.jpg
+Not Found: /static/img/india-bloodbank.jpg
+Not Found: /static/img/india-hospital.jpg
+Not Found: /static/img/healthy-donor.jpg
+Not Found: /static/img/challenges.jpg
+Not Found: /static/img/india-donors.jpg
+Not Found: /favicon.ico
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/dark_mode.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/js/theme.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/dark_mode.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/js/theme.js
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/dark_mode.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/css/dashboard.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/js/theme.js
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/img/donation-1.jpg
+Not Found: /static/img/donation-2.jpg
+Not Found: /static/img/india-hospital.jpg
+Not Found: /static/img/india-donors.jpg
+Not Found: /static/img/challenges.jpg
+Not Found: /static/img/healthy-donor.jpg
+Not Found: /static/img/india-bloodbank.jpg
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/img/donation-1.jpg
+Not Found: /static/img/donation-2.jpg
+Not Found: /static/img/india-hospital.jpg
+Not Found: /favicon.ico
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/img/india-hospital.jpg
+Not Found: /static/img/donation-1.jpg
+Not Found: /static/img/donation-2.jpg
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/img/donation-1.jpg
+Not Found: /static/img/donation-2.jpg
+Not Found: /static/img/india-hospital.jpg
+Not Found: /favicon.ico
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/img/donation-2.jpg
+Not Found: /static/img/donation-1.jpg
+Not Found: /static/img/india-hospital.jpg
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/default.js
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/img/donation-1.jpg
+Not Found: /static/img/india-hospital.jpg
+Not Found: /static/img/donation-2.jpg
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Method Not Allowed: /api/accounts/register/
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/img/donation-1.jpg
+Not Found: /static/img/india-hospital.jpg
+Not Found: /static/img/donation-2.jpg
+Not Found: /static/admin/css/dark_mode.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/js/theme.js
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/js/nav_sidebar.js
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /favicon.ico
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/dark_mode.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/js/theme.js
+Not Found: /static/admin/js/nav_sidebar.js
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\admin.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\admin.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\admin.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\admin.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /favicon.ico
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Unauthorized: /api/donors/search/
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Unauthorized: /api/donors/search/
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/admin/css/dark_mode.css
+Not Found: /static/admin/css/dashboard.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/js/theme.js
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /api/accounts/profile/update/
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/accounts/profile/update/
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Bad Request: /api/accounts/profile/update/
+Bad Request: /api/accounts/profile/update/
+Bad Request: /api/accounts/profile/update/
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /favicon.ico
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\apps\core\middleware.py", line 25, in process_request
+    request_count = cache.get(cache_key, 0)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\apps\core\middleware.py", line 25, in process_request
+    request_count = cache.get(cache_key, 0)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\apps\core\middleware.py", line 25, in process_request
+    request_count = cache.get(cache_key, 0)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\apps\core\middleware.py", line 25, in process_request
+    request_count = cache.get(cache_key, 0)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\apps\core\middleware.py", line 25, in process_request
+    request_count = cache.get(cache_key, 0)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\apps\core\middleware.py", line 25, in process_request
+    request_count = cache.get(cache_key, 0)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+Internal Server Error: /api/accounts/password-reset/request/
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\apps\core\middleware.py", line 25, in process_request
+    request_count = cache.get(cache_key, 0)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\venv\Lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/accounts/password-reset/request/
+Failed to send OTP email to test@example.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2a88b4154fcsm147244525ad.36 - gsmtp')
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py", line 302, in send_otp_email
+    send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [user.email])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\mail\__init__.py", line 87, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 94, in open
+    self.connection.login(self.username, self.password)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 764, in login
+    raise last_exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 753, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 671, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2a88b4154fcsm147244525ad.36 - gsmtp')
+Error in password reset request: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2a88b4154fcsm147244525ad.36 - gsmtp')
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py", line 121, in password_reset_request
+    send_otp_email(user, otp)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py", line 302, in send_otp_email
+    send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [user.email])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\mail\__init__.py", line 87, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 94, in open
+    self.connection.login(self.username, self.password)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 764, in login
+    raise last_exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 753, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 671, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2a88b4154fcsm147244525ad.36 - gsmtp')
+Internal Server Error: /api/accounts/api/password-reset/request/
+Watching for file changes with StatReloader
+OTP email sent successfully to test@example.com
+OTP sent successfully to test@example.com for user 5
+OTP verified successfully for user 5
+Password reset successful for user 5
+Invalid email format: invalid-email
+Bad Request: /api/accounts/api/password-reset/request/
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+Not Found: /favicon.ico
+Unauthorized: /api/donors/search/
+Not Found: /api/analytics/system-stats/
+Unauthorized: /api/analytics/stats/
+Unauthorized: /api/requests/list/
+Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Bad Request: /api/accounts/profile/
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\donors\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\requests\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\requests\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\requests\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\requests\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\notifications\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\notifications\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\notifications\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\notifications\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\notifications\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\notifications\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\analytics\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py", line 371, in login_view
+    return render(request, 'accounts/login.html')
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 203, in url
+    return self._url(self.stored_name, name, force)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 182, in _url
+    hashed_name = hashed_name_func(*args)
+  File "C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\.venv\Lib\site-packages\django\contrib\staticfiles\storage.py", line 513, in stored_name
+    raise ValueError(
+        "Missing staticfiles manifest entry for '%s'" % clean_name
+    )
+ValueError: Missing staticfiles manifest entry for 'css/home.css'
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/donors/search/
+Watching for file changes with StatReloader
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /api/accounts/password-reset/request/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /non-existent-page/
+Not Found: /api/accounts/password-reset/request/
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /api/accounts/password-reset/request/
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Watching for file changes with StatReloader
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Password reset requested for non-existent email: soodh674@gmail.com
+Password reset requested for non-existent email: soodh674@gmail.com
+Password reset requested for non-existent email: soodh674@gmail.com
+Password reset requested for non-existent email: soodh674@gmail.com
+Password reset requested for non-existent email: soodh674@gmail.com
+OTP email sent successfully to test@example.com
+OTP sent successfully to test@example.com for user 5
+OTP verified successfully for user 5
+Password reset successful for user 5
+Password reset requested for non-existent email: soodh674@gmail.com
+OTP email sent successfully to test@example.com
+OTP sent successfully to test@example.com for user 5
+OTP verified successfully for user 5
+Password reset successful for user 5
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Password reset requested for non-existent email: soodh674@gmail.com
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/app.js
+Not Found: /static/js/animations.js
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+OTP email sent successfully to test@example.com
+OTP sent successfully to test@example.com for user 5
+OTP verified successfully for user 5
+Password reset successful for user 5
+Unauthorized: /api/auth/token/
+OTP email sent successfully to test@example.com
+OTP sent successfully to test@example.com for user 5
+Password reset successful for user 5
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\urls.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\accounts\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/css/home.css
+Not Found: /static/css/tailwind-custom.css
+Not Found: /static/js/home.js
+Not Found: /static/js/animations.js
+Not Found: /static/js/app.js
+Not Found: /favicon.ico
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+C:\Users\mypc0\OneDrive\Desktop\BLOOD DONOR PROJECT\blood_donation\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader

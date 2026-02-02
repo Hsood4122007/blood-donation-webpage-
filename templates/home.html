@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <main class="page">
+        <!-- HERO -->
+        <section class="hero min-h-screen relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <!-- Fallback background with gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-br from-red-900/20 via-gray-900/80 to-gray-900"></div>
+                
+                <!-- Decorative background elements -->
+                <div class="absolute inset-0">
+                    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-red-500/10 rounded-full blur-3xl animate-pulse"></div>
+                    <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+                </div>
+            </div>
+            
+            <div class="hero-overlay"></div>
+            <div class="hero-content relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="max-w-3xl">
+                    <p class="eyebrow text-red-400 uppercase tracking-wider text-sm font-medium animate-on-scroll">
+                        Blood Donation Platform
+                    </p>
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-4 animate-on-scroll" style="animation-delay: 0.1s;">
+                        Blood that moves today.<br>
+                        <span class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Lives that continue tomorrow.</span>
+                    </h1>
+                    <p class="hero-copy text-xl text-gray-300 mt-6 animate-on-scroll" style="animation-delay: 0.2s;">
+                        A calm, clear way to connect people who can give with patients who urgently need blood –
+                        built for real hospitals, real donors, and real emergencies.
+                    </p>
+                    
+                    <!-- Search Bar for Logged-in Users -->
+                    {% if user.is_authenticated %}
+                    <div class="mt-8 animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-xl max-w-2xl mx-auto">
+                            <h3 class="text-lg font-semibold text-white mb-4 text-center">Find Blood Donors Near You</h3>
+                            <form id="home-search-form" class="space-y-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <select id="home-blood-group" name="blood_group" required
+                                                class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                                            <option value="">Select Blood Group</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A-">A-</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B-">B-</option>
+                                            <option value="AB+">AB+</option>
+                                            <option value="AB-">AB-</option>
+                                            <option value="O+">O+</option>
+                                            <option value="O-">O-</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <input type="text" id="home-pincode" name="pincode" 
+                                               placeholder="Enter pincode (optional)"
+                                               maxlength="6"
+                                               class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                                    </div>
+                                </div>
+                                <button type="submit" 
+                                        class="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg>
+                                    Search Donors
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <div class="hero-actions mt-8 flex flex-wrap gap-4 animate-on-scroll" style="animation-delay: 0.3s;">
+                        <a href="#join" class="btn btn-primary bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            Become a donor
+                        </a>
+                        <a href="#story" class="btn btn-ghost bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 border border-white/20">
+                            Why it matters
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-media scroll-parallax relative z-10">
+                <div class="hero-media-card bg-white/10 backdrop-blur-md rounded-2xl p-6 max-w-xs ml-auto animate-on-scroll" style="animation-delay: 0.4s;">
+                    <p class="hero-stat-label text-red-400 uppercase tracking-wide text-sm">Every 2 seconds</p>
+                    <p class="hero-stat-value text-white text-2xl font-bold">someone needs blood.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 01 STORY -->
+        <section id="story" class="story-block py-20 relative">
+            <div class="story-label scroll-fade max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <span class="story-index text-2xl font-bold text-red-500">01</span>
+                <span class="story-tag text-gray-400 uppercase tracking-wider ml-4">Why blood donation matters</span>
+            </div>
+            <div class="story-body scroll-fade max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 animate-on-scroll" style="animation-delay: 0.1s;">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Blood can't be manufactured. It has to be given.</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    In emergencies, surgeries, cancer treatments, childbirth complications, and chronic illnesses,
+                    safe blood is often the one thing that decides whether a patient gets a second chance.
+                </p>
+                <div class="story-grid grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <div class="story-point bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 animate-on-scroll" style="animation-delay: 0.2s;">
+                        <h3 class="text-xl font-semibold text-white mb-3">Emergencies</h3>
+                        <p class="text-gray-300">Accidents, trauma, and disasters require immediate transfusions when every minute counts.</p>
+                    </div>
+                    <div class="story-point bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 animate-on-scroll" style="animation-delay: 0.3s;">
+                        <h3 class="text-xl font-semibold text-white mb-3">Treatments</h3>
+                        <p class="text-gray-300">Cancer, thalassemia, sickle cell disease, and major surgeries all depend on regular blood and platelet support.</p>
+                    </div>
+                    <div class="story-point bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 animate-on-scroll" style="animation-delay: 0.4s;">
+                        <h3 class="text-xl font-semibold text-white mb-3">India's gap</h3>
+                        <p class="text-gray-300">Millions of units are needed each year, yet many hospitals still face shortages – especially for rare groups.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-media scroll-parallax absolute right-0 top-0 w-full md:w-1/2 h-full flex items-center justify-end pr-8">
+                <div class="w-full max-w-md animate-on-scroll" style="animation-delay: 0.5s;">
+                    <div class="bg-gradient-to-br from-red-500/25 to-red-600/20 rounded-2xl p-8 border border-red-400/30 shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <div class="bg-gradient-to-br from-red-500/10 to-red-600/10 rounded-xl h-64 flex items-center justify-center border border-red-500/20">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-red-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-red-300 font-bold text-lg">Seamless Donation</p>
+                                    <p class="text-red-200 text-sm mt-2 font-medium">Secure & streamlined blood giving</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 HOW IT WORKS -->
+        <section id="how-it-works" class="story-block py-20 relative bg-gradient-to-b from-gray-900/50 to-gray-800/50">
+            <div class="story-label scroll-fade max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <span class="story-index text-2xl font-bold text-red-500">02</span>
+                <span class="story-tag text-gray-400 uppercase tracking-wider ml-4">How the platform works</span>
+            </div>
+            <div class="story-body scroll-fade max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 animate-on-scroll" style="animation-delay: 0.1s;">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">From request to donation in a few simple steps.</h2>
+                <ol class="steps space-y-8">
+                    <li class="flex items-start animate-on-scroll" style="animation-delay: 0.2s;">
+                        <div class="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Hospitals create a request</h3>
+                            <p class="text-gray-300">Doctors or admins log in, add the patient's blood group, urgency, location, and contact details.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">2</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Smart matching finds nearby donors</h3>
+                            <p class="text-gray-300">Our algorithm checks blood group compatibility, distance, and donor availability to suggest best matches.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start animate-on-scroll" style="animation-delay: 0.4s;">
+                        <div class="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">3</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Donors are notified instantly</h3>
+                            <p class="text-gray-300">Verified donors receive clear, actionable notifications and can respond quickly to help.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="story-media scroll-parallax absolute left-0 top-0 w-full md:w-1/2 h-full flex items-center justify-start pl-8">
+                <div class="w-full max-w-md animate-on-scroll" style="animation-delay: 0.5s;">
+                    <div class="bg-gradient-to-br from-blue-500/25 to-blue-600/20 rounded-2xl p-8 border border-blue-400/30 shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <div class="bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-xl h-64 flex items-center justify-center border border-blue-500/20">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-blue-300 font-bold text-lg">Smart Matching</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 IMPACT -->
+        <section id="impact" class="impact-block py-20">
+            <div class="impact-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="impact-header text-center mb-12">
+                    <span class="story-index text-2xl font-bold text-red-500">03</span>
+                    <span class="story-tag text-gray-400 uppercase tracking-wider ml-4">Impact at a glance</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-16">Designed for people first – donors, patients, and hospitals.</h2>
+                <div class="impact-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="impact-card bg-white/5 backdrop-blur-md rounded-2xl p-8 text-center border border-white/10 animate-on-scroll" style="animation-delay: 0.1s;">
+                        <p class="impact-number text-5xl font-bold text-red-400 mb-4" data-count-to="3">0</p>
+                        <p class="impact-text text-gray-300">Patients who can benefit from a single blood donation (red cells, plasma, platelets).</p>
+                    </div>
+                    <div class="impact-card bg-white/5 backdrop-blur-md rounded-2xl p-8 text-center border border-white/10 animate-on-scroll" style="animation-delay: 0.2s;">
+                        <p class="impact-number text-5xl font-bold text-red-400 mb-4" data-count-to="90">0</p>
+                        <p class="impact-text text-gray-300">Days is the typical safe gap between donations – our system helps donors track this.</p>
+                    </div>
+                    <div class="impact-card bg-white/5 backdrop-blur-md rounded-2xl p-8 text-center border border-white/10 animate-on-scroll" style="animation-delay: 0.3s;">
+                        <p class="impact-number text-5xl font-bold text-red-400 mb-4" data-count-to="24">0</p>
+                        <p class="impact-text text-gray-300">Requests and matches can be created, monitored, and updated at any time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 JOIN -->
+        <section id="join" class="join-block py-20">
+            <div class="join-inner max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="join-pill text-center text-sm uppercase tracking-wider text-white bg-white/10 backdrop-blur-md rounded-full py-2 px-6 inline-block mb-8 border border-white/20">
+                    04 · Take the next step
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-6">Ready to help? Start where you are.</h2>
+                <p class="join-copy text-center text-xl text-gray-300 mb-10">
+                    If you are healthy and eligible, donating blood once every 3–4 months can change someone's story.
+                    Hospitals and blood banks can use this platform to make every unit count.
+                </p>
+                <div class="join-actions flex flex-wrap justify-center gap-6 mb-10">
+                    <a href="/accounts/register/" class="btn btn-primary bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        Register as donor
+                    </a>
+                    <a href="/admin/" class="btn btn-ghost bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 border border-white/20">
+                        Hospital / admin login
+                    </a>
+                </div>
+                <p class="join-note text-center text-gray-400">
+                    Not sure if you're eligible? Your local blood bank will guide you on age, weight, health, and donation intervals.
+                </p>
+            </div>
+        </section>
+    </main>
+{% endblock %}

@@ -1,0 +1,539 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}My Profile - BloodLife{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-gray-900 via-red-900/10 to-gray-900 py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 shadow-2xl animate-on-scroll">
+            <div class="flex items-center justify-between mb-8">
+                <h1 class="text-3xl font-bold text-white">My Profile</h1>
+                <a href="/accounts/dashboard/" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">
+                    Back to Dashboard
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Profile Picture and Basic Info -->
+                <div class="md:col-span-1">
+                    <div class="bg-white/10 rounded-xl p-6 text-center">
+                        <div class="w-24 h-24 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl font-bold text-white">{{ user.first_name|slice:":1"|upper }}{{ user.last_name|slice:":1"|upper }}</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-white">{{ user.first_name }} {{ user.last_name }}</h2>
+                        <p class="text-red-400 font-medium">@{{ user.username }}</p>
+                        <p class="text-gray-400 text-sm mt-2">{{ user.get_user_type_display }}</p>
+                        
+                        {% if user.is_verified %}
+                        <div class="mt-4 inline-flex items-center px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Verified
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Profile Details -->
+                <div class="md:col-span-2">
+                    <div class="space-y-6">
+                        <!-- CSRF Token -->
+                        {% csrf_token %}
+                        
+                        <!-- Personal Information -->
+                        <div class="bg-white/5 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-4">Personal Information</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">First Name</label>
+                                    <p class="text-white view-field">{{ user.first_name|default:"Not provided" }}</p>
+                                    <input type="text" name="first_name" value="{{ user.first_name|default:'' }}" 
+                                           class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Last Name</label>
+                                    <p class="text-white view-field">{{ user.last_name|default:"Not provided" }}</p>
+                                    <input type="text" name="last_name" value="{{ user.last_name|default:'' }}" 
+                                           class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Email</label>
+                                    <p class="text-white">{{ user.email }}</p>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Phone Number</label>
+                                    <p class="text-white view-field">{{ user.phone_number|default:"Not provided" }}</p>
+                                    <input type="tel" name="phone_number" value="{{ user.phone_number|default:'' }}" 
+                                           class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Date of Birth</label>
+                                    <p class="text-white view-field">{{ user.date_of_birth|date:"M d, Y"|default:"Not provided" }}</p>
+                                    <input type="date" name="date_of_birth" value="{{ user.date_of_birth|date:'Y-m-d'|default:'' }}" 
+                                           class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blood Donation Info -->
+                        <div class="bg-white/5 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-4">Blood Donation Information</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Blood Group</label>
+                                    <p class="text-red-400 font-medium text-lg view-field">{{ user.blood_group|default:"Not specified" }}</p>
+                                    <select name="blood_group" class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden">
+                                        <option value="">Select Blood Group</option>
+                                        <option value="A+" {% if user.blood_group == 'A+' %}selected{% endif %}>A+</option>
+                                        <option value="A-" {% if user.blood_group == 'A-' %}selected{% endif %}>A-</option>
+                                        <option value="B+" {% if user.blood_group == 'B+' %}selected{% endif %}>B+</option>
+                                        <option value="B-" {% if user.blood_group == 'B-' %}selected{% endif %}>B-</option>
+                                        <option value="AB+" {% if user.blood_group == 'AB+' %}selected{% endif %}>AB+</option>
+                                        <option value="AB-" {% if user.blood_group == 'AB-' %}selected{% endif %}>AB-</option>
+                                        <option value="O+" {% if user.blood_group == 'O+' %}selected{% endif %}>O+</option>
+                                        <option value="O-" {% if user.blood_group == 'O-' %}selected{% endif %}>O-</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Last Donation</label>
+                                    <p class="text-white">{{ user.last_donation_date|date:"M d, Y"|default:"Never donated" }}</p>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Days Since Last Donation</label>
+                                    <p class="text-white">{{ user.days_since_last_donation|default:"N/A" }} days</p>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Availability Status</label>
+                                    <p class="text-white view-field">{% if user.is_available %}Available for donation{% else %}Not available{% endif %}</p>
+                                    <select name="is_available" class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden">
+                                        <option value="true" {% if user.is_available %}selected{% endif %}>Available for donation</option>
+                                        <option value="false" {% if not user.is_available %}selected{% endif %}>Not available</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location Information -->
+                        <div class="bg-white/5 rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-white mb-4">Location Information</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">City</label>
+                                    <p class="text-white view-field">{{ user.city|default:"Not provided" }}</p>
+                                    <input type="text" name="city" value="{{ user.city|default:'' }}" 
+                                           class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">State</label>
+                                    <p class="text-white view-field">{{ user.state|default:"Not provided" }}</p>
+                                    <input type="text" name="state" value="{{ user.state|default:'' }}" 
+                                           class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Country</label>
+                                    <p class="text-white view-field">{{ user.country }}</p>
+                                    <input type="text" name="country" value="{{ user.country }}" 
+                                           class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Pincode</label>
+                                    <p class="text-white view-field">{{ user.pincode|default:"Not provided" }}</p>
+                                    <input type="text" name="pincode" value="{{ user.pincode|default:'' }}" maxlength="6"
+                                           class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 edit-field hidden" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="/accounts/search/" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105">
+                                Search Donors
+                            </a>
+                            <button onclick="toggleEditMode()" id="edit-toggle-btn" class="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 border border-white/20">
+                                Edit Profile
+                            </button>
+                            <button onclick="saveProfile()" id="save-btn" class="hidden bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105">
+                                Save Changes
+                            </button>
+                            <button onclick="cancelEdit()" id="cancel-btn" class="hidden bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 border border-white/20">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let isEditing = false;
+let originalData = {};
+
+// Toggle between view and edit mode
+function toggleEditMode() {
+    isEditing = !isEditing;
+    
+    const viewFields = document.querySelectorAll('.view-field');
+    const editFields = document.querySelectorAll('.edit-field');
+    const editToggleBtn = document.getElementById('edit-toggle-btn');
+    const saveBtn = document.getElementById('save-btn');
+    const cancelBtn = document.getElementById('cancel-btn');
+    
+    if (isEditing) {
+        // Switch to edit mode
+        viewFields.forEach(field => field.classList.add('hidden'));
+        editFields.forEach(field => field.classList.remove('hidden'));
+        
+        editToggleBtn.classList.add('hidden');
+        saveBtn.classList.remove('hidden');
+        cancelBtn.classList.remove('hidden');
+        
+        // Store original data for cancellation
+        storeOriginalData();
+        
+        editToggleBtn.textContent = 'Cancel Editing';
+    } else {
+        // Switch to view mode
+        viewFields.forEach(field => field.classList.remove('hidden'));
+        editFields.forEach(field => field.classList.add('hidden'));
+        
+        editToggleBtn.classList.remove('hidden');
+        saveBtn.classList.add('hidden');
+        cancelBtn.classList.add('hidden');
+        
+        editToggleBtn.textContent = 'Edit Profile';
+    }
+}
+
+// Store original data for cancellation
+function storeOriginalData() {
+    const inputs = document.querySelectorAll('.edit-field');
+    inputs.forEach(input => {
+        if (input.type === 'select-one') {
+            originalData[input.name] = input.value;
+        } else {
+            originalData[input.name] = input.value;
+        }
+    });
+}
+
+// Cancel editing and restore original data
+function cancelEdit() {
+    // Restore original values
+    Object.keys(originalData).forEach(fieldName => {
+        const field = document.querySelector(`[name="${fieldName}"]`);
+        if (field) {
+            field.value = originalData[fieldName];
+        }
+    });
+    
+    // Switch back to view mode
+    isEditing = false;
+    toggleEditMode();
+}
+
+// Save profile changes
+async function saveProfile() {
+    const saveBtn = document.getElementById('save-btn');
+    const originalText = saveBtn.textContent;
+    
+    // Show loading state
+    saveBtn.innerHTML = 'Saving...';
+    saveBtn.disabled = true;
+    
+    try {
+        // Debug: Log form data collection
+        console.log('Collecting form data...');
+        
+        // Collect form data
+        const formData = new FormData();
+        const inputs = document.querySelectorAll('.edit-field');
+        
+        let fieldCount = 0;
+        inputs.forEach(input => {
+            if (input.type === 'checkbox') {
+                formData.append(input.name, input.checked);
+                console.log(`Adding checkbox ${input.name}: ${input.checked}`);
+                fieldCount++;
+            } else if (input.value.trim() !== '') {
+                formData.append(input.name, input.value);
+                console.log(`Adding field ${input.name}: ${input.value}`);
+                fieldCount++;
+            }
+        });
+        
+        console.log(`Total fields collected: ${fieldCount}`);
+        
+        // Check if we have any data to send
+        if (fieldCount === 0) {
+            showMessage('No changes detected. Please modify at least one field.', 'error');
+            saveBtn.innerHTML = originalText;
+            saveBtn.disabled = false;
+            return;
+        }
+        
+        // Get CSRF token
+        const csrfToken = getCSRFToken();
+        console.log('CSRF Token:', csrfToken ? 'Found' : 'NOT FOUND');
+        
+        if (!csrfToken) {
+            showMessage('Security token missing. Please refresh the page and try again.', 'error');
+            saveBtn.innerHTML = originalText;
+            saveBtn.disabled = false;
+            return;
+        }
+        
+        // Prepare headers
+        const headers = {
+            'X-CSRFToken': csrfToken
+        };
+        
+        // Add authorization header if available
+        const accessToken = localStorage.getItem('access_token');
+        if (accessToken) {
+            headers['Authorization'] = `Bearer ${accessToken}`;
+        }
+        
+        console.log('Making API request to:', '/api/accounts/profile/update/');
+        console.log('Headers:', headers);
+        
+        // Make the API request
+        const response = await fetch('/api/accounts/profile/update/', {
+            method: 'PUT',
+            body: formData,
+            headers: headers
+        });
+        
+        console.log('Response status:', response.status);
+        
+        // Try to parse response
+        let data;
+        try {
+            data = await response.json();
+            console.log('Response data:', data);
+        } catch (parseError) {
+            console.error('Failed to parse response JSON:', parseError);
+            showMessage(`Server error: ${response.status} ${response.statusText}`, 'error');
+            saveBtn.innerHTML = originalText;
+            saveBtn.disabled = false;
+            return;
+        }
+        
+        if (response.ok) {
+            // Show success message
+            showMessage('Profile updated successfully!', 'success');
+            
+            // Update view fields with new data
+            if (data.user) {
+                try {
+                    updateViewFields(data.user);
+                } catch (viewError) {
+                    console.error('Error updating view fields:', viewError);
+                    // Even if view update fails, the save was successful
+                    // User can refresh to see changes
+                }
+            }
+            
+            // Switch back to view mode
+            isEditing = false;
+            toggleEditMode();
+        } else {
+            // Show error message
+            const errorMessage = data.error || data.detail || `Failed to update profile (${response.status})`;
+            showMessage(errorMessage, 'error');
+        }
+    } catch (error) {
+        console.error('Error updating profile:', error);
+        
+        // Provide more specific error messages
+        let errorMessage = 'An unexpected error occurred. Please try again.';
+        
+        if (error instanceof TypeError && error.message.includes('null')) {
+            errorMessage = 'UI update error occurred, but your profile was saved successfully. Please refresh the page to see updated information.';
+        } else if (error.name === 'TypeError' || error.name === 'ReferenceError') {
+            errorMessage = 'Interface error occurred, but your profile was saved successfully. Please refresh the page.';
+        } else if (error.message.includes('fetch') || error.message.includes('network')) {
+            errorMessage = 'Network connection error. Please check your internet connection and try again.';
+        }
+        
+        showMessage(errorMessage, 'error');
+    } finally {
+        // Restore button state
+        saveBtn.innerHTML = originalText;
+        saveBtn.disabled = false;
+    }
+}
+
+// Update view fields with new data
+function updateViewFields(userData) {
+    // Helper function to safely update element text content
+    function safeUpdate(selector, text) {
+        const element = document.querySelector(selector);
+        if (element && element.nextElementSibling) {
+            element.nextElementSibling.textContent = text;
+            return true;
+        }
+        console.warn(`Element not found for selector: ${selector}`);
+        return false;
+    }
+    
+    try {
+        // Update text fields
+        if (userData.first_name) {
+            safeUpdate('[name="first_name"]', userData.first_name);
+        }
+        if (userData.last_name) {
+            safeUpdate('[name="last_name"]', userData.last_name);
+        }
+        if (userData.phone_number) {
+            safeUpdate('[name="phone_number"]', userData.phone_number || 'Not provided');
+        }
+        if (userData.date_of_birth) {
+            const date = new Date(userData.date_of_birth);
+            const formattedDate = date.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric' 
+            });
+            safeUpdate('[name="date_of_birth"]', formattedDate);
+        }
+        
+        // Update blood group
+        if (userData.blood_group) {
+            safeUpdate('[name="blood_group"]', userData.blood_group);
+        } else {
+            safeUpdate('[name="blood_group"]', 'Not specified');
+        }
+        
+        // Update location fields
+        if (userData.city) {
+            safeUpdate('[name="city"]', userData.city);
+        } else {
+            safeUpdate('[name="city"]', 'Not provided');
+        }
+        
+        if (userData.state) {
+            safeUpdate('[name="state"]', userData.state);
+        } else {
+            safeUpdate('[name="state"]', 'Not provided');
+        }
+        
+        if (userData.country) {
+            safeUpdate('[name="country"]', userData.country);
+        }
+        
+        if (userData.pincode) {
+            safeUpdate('[name="pincode"]', userData.pincode);
+        } else {
+            safeUpdate('[name="pincode"]', 'Not provided');
+        }
+        
+        // Update availability status
+        const availabilityText = userData.is_available ? 'Available for donation' : 'Not available';
+        safeUpdate('[name="is_available"]', availabilityText);
+        
+        console.log('View fields updated successfully');
+    } catch (error) {
+        console.error('Error updating view fields:', error);
+        // Don't show user-facing error for view updates, just log it
+        // The main save operation was successful, view update is secondary
+    }
+}
+
+// Get CSRF token
+function getCSRFToken() {
+    // Try multiple methods to get CSRF token
+    const tokenElement = document.querySelector('[name=csrfmiddlewaretoken]');
+    if (tokenElement && tokenElement.value) {
+        return tokenElement.value;
+    }
+    
+    // Try meta tag method
+    const metaToken = document.querySelector('meta[name=csrf-token]');
+    if (metaToken && metaToken.content) {
+        return metaToken.content;
+    }
+    
+    // Try cookie method
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+        const [name, value] = cookie.trim().split('=');
+        if (name === 'csrftoken') {
+            return value;
+        }
+    }
+    
+    console.error('CSRF token not found!');
+    return null;
+}
+
+// Show message notification
+function showMessage(message, type = 'info') {
+    // Remove existing messages
+    const existingMessages = document.querySelectorAll('.profile-message');
+    existingMessages.forEach(msg => msg.remove());
+    
+    // Create message element
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `profile-message fixed top-20 right-4 z-50 px-6 py-4 rounded-lg shadow-lg transform transition-all duration-300 ease-in-out max-w-sm ${
+        type === 'success' ? 'bg-green-500' : 
+        type === 'error' ? 'bg-red-500' : 'bg-blue-500'
+    } text-white animate-fade-in-up`;
+    
+    messageDiv.innerHTML = `
+        <div class="flex items-center">
+            ${type === 'success' ? 
+                '<svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>' :
+            type === 'error' ? 
+                '<svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>' :
+                '<svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>'
+            }
+            <span>${message}</span>
+        </div>
+        <button onclick="this.parentElement.parentElement.remove()" class="absolute top-2 right-2 text-white hover:text-gray-200">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    `;
+    
+    // Add to document
+    document.body.appendChild(messageDiv);
+    
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+        if (messageDiv.parentNode) {
+            messageDiv.remove();
+        }
+    }, 5000);
+}
+
+// Add CSS for animations if not already present
+document.addEventListener('DOMContentLoaded', function() {
+    if (!document.querySelector('#profile-animation-styles')) {
+        const style = document.createElement('style');
+        style.id = 'profile-animation-styles';
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translate3d(0, 100%, 0);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+            
+            .animate-fade-in-up {
+                animation: fadeInUp 0.3s ease-out forwards;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+});
+</script>
+{% endblock %}

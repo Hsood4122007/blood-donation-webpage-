@@ -1,0 +1,24 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password Reset OTP - BloodLife Platform
+From: noreply@bloodlife.org
+To: test@example.com
+Date: Mon, 02 Feb 2026 17:06:12 -0000
+Message-ID: <177005197292.41504.13159919273899832858@Quantumm.lan>
+
+
+        Hello Test,
+        
+        You have requested to reset your password. Please use the following OTP to complete the process:
+        
+        OTP: 143169
+        
+        This OTP will expire in 10 minutes.
+        
+        If you didn't request this, please ignore this email.
+        
+        Best regards,
+        BloodLife Team
+        
+-------------------------------------------------------------------------------

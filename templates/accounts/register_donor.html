@@ -1,0 +1,481 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Register as Donor - BloodLife{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-gray-900 via-red-900/10 to-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                <span class="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Become a Life Saver</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Join our community of blood donors and help save lives in your community
+            </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 shadow-2xl">
+            <form id="donor-registration-form" method="post" class="space-y-6">
+                {% csrf_token %}
+                
+                <!-- Progress Indicator -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="text-sm font-medium text-gray-400">Step <span id="current-step">1</span> of 4</div>
+                        <div class="text-sm font-medium text-gray-400"><span id="progress-percent">25</span>% Complete</div>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div id="progress-bar" class="bg-gradient-to-r from-red-500 to-red-600 h-2 rounded-full transition-all duration-300" style="width: 25%"></div>
+                    </div>
+                </div>
+
+                <!-- Step 1: Personal Information -->
+                <div id="step-1" class="step active">
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">1</span>
+                        Personal Information
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first_name" class="block text-sm font-medium text-gray-300 mb-2">First Name *</label>
+                            <input type="text" id="first_name" name="first_name" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="last_name" class="block text-sm font-medium text-gray-300 mb-2">Last Name *</label>
+                            <input type="text" id="last_name" name="last_name" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="phone_number" class="block text-sm font-medium text-gray-300 mb-2">Phone Number *</label>
+                            <input type="tel" id="phone_number" name="phone_number" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="date_of_birth" class="block text-sm font-medium text-gray-300 mb-2">Date of Birth *</label>
+                            <input type="date" id="date_of_birth" name="date_of_birth" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="gender" class="block text-sm font-medium text-gray-300 mb-2">Gender *</label>
+                            <select id="gender" name="gender" required
+                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer_not_to_say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Medical Information -->
+                <div id="step-2" class="step hidden">
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">2</span>
+                        Medical Information
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Blood Type *</label>
+                            <div class="grid grid-cols-4 gap-3">
+                                <!-- Blood type options are dynamically populated by JavaScript -->
+                                <div id="blood-type-options" class="grid grid-cols-4 gap-3">
+                                    <!-- Options will be populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div>
+                            <label for="last_donation_date" class="block text-sm font-medium text-gray-300 mb-2">Last Donation Date</label>
+                            <input type="date" id="last_donation_date" name="last_donation_date"
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="has_medical_conditions" name="has_medical_conditions" value="true"
+                                       class="w-4 h-4 text-red-500 bg-white/10 border-white/20 rounded focus:ring-red-500 focus:ring-2">
+                                <label for="has_medical_conditions" class="ml-3 text-sm text-gray-300">Do you have any medical conditions?</label>
+                            </div>
+                            
+                            <div id="medical_conditions_details" class="hidden space-y-3 ml-7">
+                                <textarea id="medical_conditions" name="medical_conditions" rows="3"
+                                          placeholder="Please describe your medical conditions"
+                                          class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Location Information -->
+                <div id="step-3" class="step hidden">
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">3</span>
+                        Location Information
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="address" class="block text-sm font-medium text-gray-300 mb-2">Address *</label>
+                            <input type="text" id="address" name="address" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="city" class="block text-sm font-medium text-gray-300 mb-2">City *</label>
+                            <input type="text" id="city" name="city" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="state" class="block text-sm font-medium text-gray-300 mb-2">State *</label>
+                            <input type="text" id="state" name="state" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="country" class="block text-sm font-medium text-gray-300 mb-2">Country *</label>
+                            <input type="text" id="country" name="country" required value="India"
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="pincode" class="block text-sm font-medium text-gray-300 mb-2">Pincode *</label>
+                            <input type="text" id="pincode" name="pincode" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200" maxlength="6">
+                        </div>
+                        
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Enable Location Services</label>
+                            <button type="button" id="enable-location" 
+                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-gray-300 hover:border-red-500 hover:text-white transition-colors duration-200">
+                                Use Current Location
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Account Setup -->
+                <div id="step-4" class="step hidden">
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">4</span>
+                        Account Setup
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <input type="hidden" id="user_type" name="user_type" value="donor">
+                        <div>
+                            <label for="username" class="block text-sm font-medium text-gray-300 mb-2">Username *</label>
+                            <input type="text" id="username" name="username" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="password" class="block text-sm font-medium text-gray-300 mb-2">Password *</label>
+                            <input type="password" id="password" name="password" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="confirm_password" class="block text-sm font-medium text-gray-300 mb-2">Confirm Password *</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required
+                                   class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="consent_given" name="consent_given" required
+                                       class="w-4 h-4 text-red-500 bg-white/10 border-white/20 rounded focus:ring-red-500 focus:ring-2">
+                                <label for="consent_given" class="ml-3 text-sm text-gray-300">I agree to the <a href="#" class="text-red-400 hover:text-red-300">Terms of Service</a> and <a href="#" class="text-red-400 hover:text-red-300">Privacy Policy</a></label>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input type="checkbox" id="data_retention_consent" name="data_retention_consent" required
+                                       class="w-4 h-4 text-red-500 bg-white/10 border-white/20 rounded focus:ring-red-500 focus:ring-2">
+                                <label for="data_retention_consent" class="ml-3 text-sm text-gray-300">I consent to data retention and processing for blood donation purposes</label>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input type="checkbox" id="newsletter" name="newsletter"
+                                       class="w-4 h-4 text-red-500 bg-white/10 border-white/20 rounded focus:ring-red-500 focus:ring-2">
+                                <label for="newsletter" class="ml-3 text-sm text-gray-300">Subscribe to our newsletter for updates</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex justify-between mt-8">
+                    <button type="button" id="prev-btn" class="hidden px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors duration-200 border border-white/20">
+                        Previous
+                    </button>
+                    <button type="button" id="next-btn" class="px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white rounded-lg transition-all duration-200 transform hover:scale-105">
+                        Next
+                    </button>
+                    <button type="submit" id="submit-btn" class="hidden px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-lg transition-all duration-200 transform hover:scale-105">
+                        Register as Donor
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('donor-registration-form');
+    const steps = document.querySelectorAll('.step');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const submitBtn = document.getElementById('submit-btn');
+    const progressBar = document.getElementById('progress-bar');
+    const currentStepEl = document.getElementById('current-step');
+    const progressPercent = document.getElementById('progress-percent');
+    
+    // Define blood types
+    const bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'];
+    
+    // Populate blood type options
+    const bloodTypeContainer = document.getElementById('blood-type-options');
+    if (bloodTypeContainer) {
+        bloodTypes.forEach(type => {
+            const label = document.createElement('label');
+            label.className = 'relative flex items-center justify-center p-4 border-2 border-white/20 rounded-lg cursor-pointer hover:border-red-500 transition-colors duration-200 group';
+            
+            label.innerHTML = '<input type="radio" name="blood_group" value="' + type + '" required class="sr-only peer">' +
+                              '<span class="text-white font-bold text-lg peer-checked:text-red-500 group-hover:text-red-500 transition-colors duration-200">' + type + '</span>' +
+                              '<div class="absolute inset-0 bg-red-500 opacity-0 rounded-lg transition-opacity duration-200 peer-checked:opacity-20"></div>';
+            
+            bloodTypeContainer.appendChild(label);
+        });
+    }
+    
+    let currentStep = 0;
+    const totalSteps = steps.length;
+
+    function showStep(stepIndex) {
+        steps.forEach((step, index) => {
+            if (index === stepIndex) {
+                step.classList.remove('hidden');
+                step.classList.add('active');
+            } else {
+                step.classList.add('hidden');
+                step.classList.remove('active');
+            }
+        });
+
+        // Update navigation buttons
+        if (stepIndex === 0) {
+            prevBtn.classList.add('hidden');
+        } else {
+            prevBtn.classList.remove('hidden');
+        }
+
+        if (stepIndex === totalSteps - 1) {
+            nextBtn.classList.add('hidden');
+            submitBtn.classList.remove('hidden');
+        } else {
+            nextBtn.classList.remove('hidden');
+            submitBtn.classList.add('hidden');
+        }
+
+        // Update progress
+        currentStep = stepIndex;
+        const percent = ((stepIndex + 1) / totalSteps) * 100;
+        progressBar.style.width = `${percent}%`;
+        currentStepEl.textContent = stepIndex + 1;
+        progressPercent.textContent = Math.round(percent);
+    }
+
+    // Next button click handler
+    nextBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Validate current step
+        let isValid = true;
+        const currentStepElement = steps[currentStep];
+        const requiredFields = currentStepElement.querySelectorAll('[required]');
+        
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('border-red-500');
+            } else {
+                field.classList.remove('border-red-500');
+            }
+        });
+
+        if (isValid) {
+            if (currentStep < totalSteps - 1) {
+                showStep(currentStep + 1);
+            }
+        } else {
+            alert('Please fill in all required fields in the current step.');
+        }
+    });
+
+    // Previous button click handler
+    prevBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (currentStep > 0) {
+            showStep(currentStep - 1);
+        }
+    });
+
+    // Show first step initially
+    showStep(0);
+
+    // Toggle medical conditions details
+    const medicalConditionsCheckbox = document.getElementById('has_medical_conditions');
+    const medicalConditionsDetails = document.getElementById('medical_conditions_details');
+
+    medicalConditionsCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            medicalConditionsDetails.classList.remove('hidden');
+        } else {
+            medicalConditionsDetails.classList.add('hidden');
+        }
+    });
+
+    // Enable location button
+    const enableLocationBtn = document.getElementById('enable-location');
+    enableLocationBtn.addEventListener('click', function() {
+        if (navigator.geolocation) {
+            this.textContent = 'Getting location...';
+            navigator.geolocation.getCurrentPosition(function(position) {
+                // In a real app, you would use the coordinates to get address
+                // For now, we'll just show a success message
+                enableLocationBtn.textContent = 'Location Enabled ✓';
+                enableLocationBtn.classList.add('text-green-400');
+                
+                // You could populate address fields here with reverse geocoding
+                // This would require a geocoding service like Google Maps API
+            }, function(error) {
+                enableLocationBtn.textContent = 'Enable Location Services';
+                enableLocationBtn.classList.remove('text-green-400');
+                alert('Could not get your location. Please enter manually.');
+            });
+        } else {
+            alert('Geolocation is not supported by your browser. Please enter location manually.');
+        }
+    });
+
+    // Password confirmation validation
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm_password');
+
+    function validatePasswords() {
+        if (passwordInput.value !== confirmPasswordInput.value) {
+            confirmPasswordInput.setCustomValidity('Passwords do not match');
+        } else {
+            confirmPasswordInput.setCustomValidity('');
+        }
+    }
+
+    passwordInput.addEventListener('input', validatePasswords);
+    confirmPasswordInput.addEventListener('input', validatePasswords);
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Final validation
+        let isValid = true;
+        const allRequired = form.querySelectorAll('[required]');
+        
+        allRequired.forEach(field => {
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('border-red-500');
+            } else {
+                field.classList.remove('border-red-500');
+            }
+        });
+
+        if (isValid) {
+            // Show loading state
+            submitBtn.innerHTML = 'Registering...';
+            submitBtn.disabled = true;
+            
+            // Submit form via AJAX
+            const formData = new FormData(form);
+            
+            // Add CSRF token to FormData
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+            formData.append('csrfmiddlewaretoken', csrfToken);
+            
+            fetch('/api/accounts/register/', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(async response => {
+                if (response.ok) {
+                    try {
+                        const data = await response.json();
+                        // Success
+                        alert('Registration successful! Please check your email for verification.');
+                        window.location.href = '/accounts/login/';
+                    } catch (error) {
+                        console.error('JSON Parse Error:', error);
+                        alert('Registration successful! Please check your email for verification.');
+                        window.location.href = '/accounts/login/';
+                    }
+                } else {
+                    try {
+                        const data = await response.json();
+                        // Error - display specific error messages
+                        let errorMessage = 'Registration failed: ';
+                        if (data && typeof data === 'object') {
+                            for (let [key, value] of Object.entries(data)) {
+                                if (Array.isArray(value)) {
+                                    errorMessage += `${key}: ${value.join(', ')} `;
+                                } else {
+                                    errorMessage += `${key}: ${value} `;
+                                }
+                            }
+                        } else {
+                            errorMessage += data?.message || 'Please try again.';
+                        }
+                        alert(errorMessage);
+                        submitBtn.innerHTML = 'Register as Donor';
+                        submitBtn.disabled = false;
+                    } catch (error) {
+                        // Handle case where response is not JSON (e.g., server error)
+                        console.error('Non-JSON Response:', response.status, response.statusText);
+                        alert(`Registration failed with status ${response.status}. Please try again.`);
+                        submitBtn.innerHTML = 'Register as Donor';
+                        submitBtn.disabled = false;
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('Network Error:', error);
+                alert('Network error occurred. Please check your connection and try again.');
+                submitBtn.innerHTML = 'Register as Donor';
+                submitBtn.disabled = false;
+            });
+        } else {
+            alert('Please fill in all required fields.');
+        }
+    });
+});
+</script>
+{% endblock %}

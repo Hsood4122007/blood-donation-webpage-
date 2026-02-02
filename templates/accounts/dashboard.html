@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Dashboard - BloodLife{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-gray-900 via-red-900/10 to-gray-900 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Welcome Section -->
+        <div class="mb-8 animate-on-scroll">
+            <h1 class="text-4xl font-bold text-white mb-2">Welcome back, {{ user.first_name|default:user.username }}!</h1>
+            <p class="text-xl text-gray-300">Ready to make a difference today?</p>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <!-- Eligibility Status -->
+            <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-red-500/30 transition-all duration-300 animate-on-scroll">
+                <div class="flex items-center">
+                    {% if stats.can_donate %}
+                    <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">Donation Status</p>
+                        <p class="text-green-400 font-semibold">Eligible to Donate</p>
+                    </div>
+                    {% else %}
+                    <div class="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">Donation Status</p>
+                        <p class="text-yellow-400 font-semibold">Not Eligible</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Days Since Last Donation -->
+            <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-red-500/30 transition-all duration-300 animate-on-scroll">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">Last Donation</p>
+                        <p class="text-white font-semibold">
+                            {% if stats.days_since_donation %}
+                                {{ stats.days_since_donation }} days ago
+                            {% else %}
+                                Never donated
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blood Group -->
+            <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-red-500/30 transition-all duration-300 animate-on-scroll">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">Your Blood Type</p>
+                        <p class="text-red-400 font-bold text-xl">{{ user.blood_group|default:"Unknown" }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Action -->
+            <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-red-500/30 transition-all duration-300 animate-on-scroll">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">Quick Action</p>
+                        <a href="/accounts/search/" class="text-purple-400 font-semibold hover:text-purple-300 transition-colors">Find Donors</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Recent Activity -->
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 animate-on-scroll">
+                    <h2 class="text-2xl font-bold text-white mb-6">Recent Activity</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-white/5 rounded-lg">
+                            <div class="w-10 h-10 bg-red-500/20 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-white font-medium">Account created</p>
+                                <p class="text-gray-400 text-sm">{{ user.created_at|date:"M d, Y" }}</p>
+                            </div>
+                        </div>
+                        
+                        {% if user.last_donation_date %}
+                        <div class="flex items-center p-4 bg-white/5 rounded-lg">
+                            <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-white font-medium">Last blood donation</p>
+                                <p class="text-gray-400 text-sm">{{ user.last_donation_date|date:"M d, Y" }}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Blood Donation Tips -->
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 animate-on-scroll">
+                    <h2 class="text-2xl font-bold text-white mb-6">Donation Tips</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <span class="text-white text-xs font-bold">1</span>
+                            </div>
+                            <p class="text-gray-300">Drink plenty of water before donating to stay hydrated</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <span class="text-white text-xs font-bold">2</span>
+                            </div>
+                            <p class="text-gray-300">Eat iron-rich foods to help with recovery</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <span class="text-white text-xs font-bold">3</span>
+                            </div>
+                            <p class="text-gray-300">Rest for at least 15 minutes after donation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Quick Actions -->
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 animate-on-scroll">
+                    <h2 class="text-2xl font-bold text-white mb-6">Quick Actions</h2>
+                    <div class="space-y-4">
+                        <a href="/accounts/search/" class="block w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white py-3 px-4 rounded-lg font-medium text-center transition-all duration-200 transform hover:scale-105">
+                            Find Blood Donors
+                        </a>
+                        <a href="/accounts/profile/" class="block w-full bg-white/10 hover:bg-white/20 text-white py-3 px-4 rounded-lg font-medium text-center transition-all duration-200 border border-white/20">
+                            View My Profile
+                        </a>
+                        <button onclick="updateDonation()" class="block w-full bg-white/10 hover:bg-white/20 text-white py-3 px-4 rounded-lg font-medium text-center transition-all duration-200 border border-white/20">
+                            Update Donation Status
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Blood Compatibility -->
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 animate-on-scroll">
+                    <h2 class="text-2xl font-bold text-white mb-6">Your Blood Can Help</h2>
+                    {% if user.blood_group %}
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">{{ user.blood_group }}</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            {% if user.blood_group == 'O-' %}
+                                Universal donor - can help anyone!
+                            {% elif user.blood_group == 'AB+' %}
+                                Universal recipient - can receive from anyone
+                            {% else %}
+                                Compatible with several blood types
+                            {% endif %}
+                        </p>
+                        <a href="/accounts/search/" class="text-red-400 hover:text-red-300 font-medium text-sm">
+                            Find compatible recipients →
+                        </a>
+                    </div>
+                    {% else %}
+                    <p class="text-gray-400 text-center">Set your blood type in your profile</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function updateDonation() {
+    alert('Donation status update functionality would be implemented here.');
+}
+</script>
+{% endblock %}

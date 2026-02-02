@@ -1,0 +1,7 @@
+from django.apps import AppConfig
+
+
+class DonorsConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'donors'
+    verbose_name = 'Blood Donors'
