@@ -252,4 +252,5 @@ This project demonstrates:
 Perfect for computer science and software engineering students seeking to demonstrate advanced development skills and understanding of complex system design.
 
 ---
-*Built with ❤️ for saving lives through technology*
+*Built with ❤️ for saving lives through technology*#   F o r c e   r e d e p l o y  
+ 
